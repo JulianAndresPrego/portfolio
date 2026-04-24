@@ -73,4 +73,4 @@ portfolio/
 
 ---
 
-*Built with ♥ · 2025*
+*Built with ♥ · 2026*
