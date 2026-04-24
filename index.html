@@ -809,27 +809,25 @@ footer {
   <div class="section-label">Work</div>
   <h2 class="section-title">Selected <em>Projects</em></h2>
   <!--
-    ╔══════════════════════════════════════════════════════════════════╗
-    ║                  PROJECTS — HOW TO ADD A NEW ONE                ║
-    ╠══════════════════════════════════════════════════════════════════╣
-    ║  Each project is an <a> tag with one of these CSS classes:      ║
-    ║   • "featured"  → spans 3/6 columns  (main showcase project)   ║
-    ║   • "half"      → spans 3/6 columns  (standard project)        ║
-    ║   • "third"     → spans 2/6 columns  (compact project)         ║
-    ║                                                                  ║
-    ║  GRID LAYOUT (6 columns total per row):                         ║
-    ║   Row of 2 → use "half" + "half"         (3+3 = 6)             ║
-    ║   Row of 3 → use "third" + "third" + "third" (2+2+2 = 6)       ║
-    ║   Row of 1 → use "featured" + "half"     (3+3 = 6)             ║
-    ║                                                                  ║
-    ║  STEPS TO ADD A NEW PROJECT:                                    ║
-    ║   1. Choose a row below or create a new one                     ║
-    ║   2. Copy any existing <a class="proj-card ..."> block          ║
-    ║   3. Update: href, proj-num, proj-tags, proj-title, proj-desc   ║
-    ║   4. Replace the <svg> inside .proj-img with your own visual    ║
-    ║   5. Update the hero stat "9+" if needed                        ║
-    ║   6. Commit and push to GitHub                                  ║
-    ╚══════════════════════════════════════════════════════════════════╝
+    PROJECTS - HOW TO ADD A NEW ONE
+    ================================
+    Each project is an anchor tag (a) with one of these CSS classes:
+      - "featured" : spans 3 of 6 columns (main showcase project)
+      - "half"     : spans 3 of 6 columns (standard project)
+      - "third"    : spans 2 of 6 columns (compact, use 3 per row)
+
+    GRID LAYOUT (6 columns total per row):
+      Row of 2 : half + half       (3+3 = 6)
+      Row of 3 : third+third+third (2+2+2 = 6)
+      Row of 1+1 : featured + half (3+3 = 6)
+
+    STEPS TO ADD A NEW PROJECT:
+      1. Find the ADD NEW PROJECTS HERE comment below
+      2. Copy an existing proj-card block from any row above
+      3. Update: href, proj-num, proj-tags, proj-title, proj-desc
+      4. Replace the SVG inside .proj-img with your own thumbnail
+      5. Update the hero stat counter if needed
+      6. Commit and push to GitHub - Pages redeploys automatically
   -->
   <div class="projects-grid">
 
@@ -1468,35 +1466,13 @@ footer {
 
 
     <!--
-    ┌──────────────────────────────────────────────────────────────┐
-    │  ➕ ADD NEW PROJECTS HERE                                    │
-    │                                                              │
-    │  Example — new row of 2 (half + half):                      │
-    │                                                              │
-    │  <!-- ── ROW 5: PROJECT_A + PROJECT_B ── -->                 │
-    │  <a href="https://github.com/..." target="_blank"            │
-    │     class="proj-card half reveal">                          │
-    │    <div class="proj-accent-line"></div>                      │
-    │    <div class="proj-img">                                    │
-    │      <!-- SVG thumbnail here (viewBox="0 0 380 160") -->     │
-    │    </div>                                                    │
-    │    <div class="proj-num">10</div>                            │
-    │    <div class="proj-tags">                                   │
-    │      <span class="proj-tag py">Python</span>                 │
-    │      <!-- Available tag styles: .py .r .bi .html -->         │
-    │    </div>                                                    │
-    │    <div class="proj-title">Project Title</div>               │
-    │    <p class="proj-desc">Description...</p>                   │
-    │    <div class="proj-footer">                                 │
-    │      <span class="proj-link">View on GitHub                 │
-    │        <svg viewBox="0 0 24 24" fill="none"                  │
-    │             stroke="currentColor" stroke-width="2">          │
-    │          <path d="M7 17L17 7M7 7h10v10"/>                   │
-    │        </svg>                                                │
-    │      </span>                                                 │
-    │    </div>                                                    │
-    │  </a>                                                        │
-    └──────────────────────────────────────────────────────────────┘
+    ADD NEW PROJECTS HERE
+    =====================
+    Copy one of the existing proj-card blocks above and paste it here.
+    Change the class to: "half" for a standard card (row of 2),
+    or "third" for a compact card (row of 3), or "featured" (row of 1+1).
+    Update href, proj-num, proj-tags, proj-title, proj-desc and the SVG thumbnail.
+    See README.md for a full step-by-step guide.
     -->
 
   </div>
@@ -1586,10 +1562,10 @@ footer {
     </div>
 
     <!--
-    ┌─────────────────────────────────────────────────────────────┐
-    │  ➕ ADD NEW EXPERIENCE: copy a .timeline-item block above   │
-    │  and add a matching .detail-panel below with id="detail-X" │
-    └─────────────────────────────────────────────────────────────┘
+    ADD NEW EXPERIENCE ITEMS HERE
+    ==============================
+    Copy a .timeline-item block from above into the timeline div,
+    and add a matching .detail-panel div below with id="detail-X".
     -->
   </div>
 </section>
